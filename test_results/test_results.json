@@ -1,0 +1,194 @@
+{
+  "generated_at_utc": "2026-10-28T01:20:47.637020+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "tests_run": 36,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_seconds": 7.170133,
+  "tests": [
+    {
+      "id": "tests.test_saes.IntegrationCLI.test_cli_encrypt_decrypt",
+      "status": "passed",
+      "elapsed_seconds": 0.295697
+    },
+    {
+      "id": "tests.test_saes.IntegrationCLI.test_gui_import_and_service",
+      "status": "passed",
+      "elapsed_seconds": 0.000834
+    },
+    {
+      "id": "tests.test_saes.Stage1Basic.test_all_keys_one_plaintext",
+      "status": "passed",
+      "elapsed_seconds": 0.778958
+    },
+    {
+      "id": "tests.test_saes.Stage1Basic.test_all_plaintexts_one_key",
+      "status": "passed",
+      "elapsed_seconds": 0.699859
+    },
+    {
+      "id": "tests.test_saes.Stage1Basic.test_component_inverses",
+      "status": "passed",
+      "elapsed_seconds": 0.482656
+    },
+    {
+      "id": "tests.test_saes.Stage1Basic.test_invalid_words",
+      "status": "passed",
+      "elapsed_seconds": 0.000617
+    },
+    {
+      "id": "tests.test_saes.Stage1Basic.test_key_schedule",
+      "status": "passed",
+      "elapsed_seconds": 0.000315
+    },
+    {
+      "id": "tests.test_saes.Stage1Basic.test_known_answers",
+      "status": "passed",
+      "elapsed_seconds": 8.1e-05
+    },
+    {
+      "id": "tests.test_saes.Stage1Basic.test_parsers",
+      "status": "passed",
+      "elapsed_seconds": 0.000363
+    },
+    {
+      "id": "tests.test_saes.Stage1Basic.test_trace",
+      "status": "passed",
+      "elapsed_seconds": 0.000248
+    },
+    {
+      "id": "tests.test_saes.Stage2CrossImplementation.test_all_finite_field_pairs",
+      "status": "passed",
+      "elapsed_seconds": 0.000424
+    },
+    {
+      "id": "tests.test_saes.Stage2CrossImplementation.test_independent_matrix_implementation",
+      "status": "passed",
+      "elapsed_seconds": 0.077207
+    },
+    {
+      "id": "tests.test_saes.Stage3ASCII.test_all_cipher_byte_values_and_padding",
+      "status": "passed",
+      "elapsed_seconds": 0.002305
+    },
+    {
+      "id": "tests.test_saes.Stage3ASCII.test_padded_ascii_roundtrip",
+      "status": "passed",
+      "elapsed_seconds": 0.000979
+    },
+    {
+      "id": "tests.test_saes.Stage3ASCII.test_raw_two_byte_mode",
+      "status": "passed",
+      "elapsed_seconds": 6.9e-05
+    },
+    {
+      "id": "tests.test_saes.Stage3ASCII.test_transport_encodings",
+      "status": "passed",
+      "elapsed_seconds": 0.000271
+    },
+    {
+      "id": "tests.test_saes.Stage4Multiple.test_double_and_triple",
+      "status": "passed",
+      "elapsed_seconds": 0.045096
+    },
+    {
+      "id": "tests.test_saes.Stage4Multiple.test_mitm_full_space",
+      "status": "passed",
+      "elapsed_seconds": 4.574491
+    },
+    {
+      "id": "tests.test_saes.Stage4Multiple.test_mitm_validation_cancel",
+      "status": "passed",
+      "elapsed_seconds": 8.5e-05
+    },
+    {
+      "id": "tests.test_saes.Stage5CBC.test_flip_cipher_bit",
+      "status": "passed",
+      "elapsed_seconds": 0.000242
+    },
+    {
+      "id": "tests.test_saes.Stage5CBC.test_flip_iv_bit",
+      "status": "passed",
+      "elapsed_seconds": 5.3e-05
+    },
+    {
+      "id": "tests.test_saes.Stage5CBC.test_replace_cipher_block",
+      "status": "passed",
+      "elapsed_seconds": 4.6e-05
+    },
+    {
+      "id": "tests.test_saes.Stage5CBC.test_roundtrip_and_equation",
+      "status": "passed",
+      "elapsed_seconds": 0.000136
+    },
+    {
+      "id": "tests.test_saes.Stage5CBC.test_text_and_validation",
+      "status": "passed",
+      "elapsed_seconds": 0.000806
+    },
+    {
+      "id": "tests.test_workflows.AppendixD.test_decryption_trace_known_states",
+      "status": "passed",
+      "elapsed_seconds": 8.9e-05
+    },
+    {
+      "id": "tests.test_workflows.AppendixD.test_textbook_expansion",
+      "status": "passed",
+      "elapsed_seconds": 4e-05
+    },
+    {
+      "id": "tests.test_workflows.AppendixD.test_textbook_sboxes_and_examples",
+      "status": "passed",
+      "elapsed_seconds": 2.8e-05
+    },
+    {
+      "id": "tests.test_workflows.WorkflowTests.test_cbc_iv_and_last_block_mutation",
+      "status": "passed",
+      "elapsed_seconds": 0.000571
+    },
+    {
+      "id": "tests.test_workflows.WorkflowTests.test_cbc_no_op_and_validation",
+      "status": "passed",
+      "elapsed_seconds": 0.000485
+    },
+    {
+      "id": "tests.test_workflows.WorkflowTests.test_cbc_replacement",
+      "status": "passed",
+      "elapsed_seconds": 0.000103
+    },
+    {
+      "id": "tests.test_workflows.WorkflowTests.test_cbc_xor_from_clean_baseline",
+      "status": "passed",
+      "elapsed_seconds": 0.000178
+    },
+    {
+      "id": "tests.test_workflows.WorkflowTests.test_independent_comparison",
+      "status": "passed",
+      "elapsed_seconds": 0.067534
+    },
+    {
+      "id": "tests.test_workflows.WorkflowTests.test_join_subkeys_preserves_order",
+      "status": "passed",
+      "elapsed_seconds": 0.0001
+    },
+    {
+      "id": "tests.test_workflows.WorkflowTests.test_mode_capabilities",
+      "status": "passed",
+      "elapsed_seconds": 3e-05
+    },
+    {
+      "id": "tests.test_workflows.WorkflowTests.test_multi_trace_matches_final_cipher",
+      "status": "passed",
+      "elapsed_seconds": 0.000134
+    },
+    {
+      "id": "tests.test_workflows.WorkflowTests.test_peer_match_and_mismatch",
+      "status": "passed",
+      "elapsed_seconds": 0.000107
+    }
+  ],
+  "native_windows_manual": "pending: run on the submission computer; live Tk regression is recorded separately",
+  "external_group_cross_test": "pending: requires a different group implementation"
+}

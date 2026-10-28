@@ -1,0 +1,907 @@
+{
+  "group_b_module": "tests.reference_adapter",
+  "count": 100,
+  "passed": 100,
+  "records": [
+    {
+      "plaintext": "0xEB60",
+      "key": "0xA0A0",
+      "cipher_a": "0xCC42",
+      "cipher_b": "0xCC42",
+      "a_decrypt_b": "0xEB60",
+      "b_decrypt_a": "0xEB60",
+      "passed": true
+    },
+    {
+      "plaintext": "0x6CDD",
+      "key": "0xF676",
+      "cipher_a": "0x9436",
+      "cipher_b": "0x9436",
+      "a_decrypt_b": "0x6CDD",
+      "b_decrypt_a": "0x6CDD",
+      "passed": true
+    },
+    {
+      "plaintext": "0x1FEE",
+      "key": "0xFD8B",
+      "cipher_a": "0x9B2C",
+      "cipher_b": "0x9B2C",
+      "a_decrypt_b": "0x1FEE",
+      "b_decrypt_a": "0x1FEE",
+      "passed": true
+    },
+    {
+      "plaintext": "0x29E9",
+      "key": "0x4BC9",
+      "cipher_a": "0xFD85",
+      "cipher_b": "0xFD85",
+      "a_decrypt_b": "0x29E9",
+      "b_decrypt_a": "0x29E9",
+      "passed": true
+    },
+    {
+      "plaintext": "0x1064",
+      "key": "0xA524",
+      "cipher_a": "0x02FA",
+      "cipher_b": "0x02FA",
+      "a_decrypt_b": "0x1064",
+      "b_decrypt_a": "0x1064",
+      "passed": true
+    },
+    {
+      "plaintext": "0x683F",
+      "key": "0x2188",
+      "cipher_a": "0x0EBE",
+      "cipher_b": "0x0EBE",
+      "a_decrypt_b": "0x683F",
+      "b_decrypt_a": "0x683F",
+      "passed": true
+    },
+    {
+      "plaintext": "0x7E0A",
+      "key": "0xDAA6",
+      "cipher_a": "0x4BDB",
+      "cipher_b": "0x4BDB",
+      "a_decrypt_b": "0x7E0A",
+      "b_decrypt_a": "0x7E0A",
+      "passed": true
+    },
+    {
+      "plaintext": "0x2E3B",
+      "key": "0x71E1",
+      "cipher_a": "0xFE70",
+      "cipher_b": "0xFE70",
+      "a_decrypt_b": "0x2E3B",
+      "b_decrypt_a": "0x2E3B",
+      "passed": true
+    },
+    {
+      "plaintext": "0x6D66",
+      "key": "0x4EB5",
+      "cipher_a": "0x6A4B",
+      "cipher_b": "0x6A4B",
+      "a_decrypt_b": "0x6D66",
+      "b_decrypt_a": "0x6D66",
+      "passed": true
+    },
+    {
+      "plaintext": "0x19D8",
+      "key": "0x13F7",
+      "cipher_a": "0x4158",
+      "cipher_b": "0x4158",
+      "a_decrypt_b": "0x19D8",
+      "b_decrypt_a": "0x19D8",
+      "passed": true
+    },
+    {
+      "plaintext": "0x5101",
+      "key": "0x3A4D",
+      "cipher_a": "0x05E7",
+      "cipher_b": "0x05E7",
+      "a_decrypt_b": "0x5101",
+      "b_decrypt_a": "0x5101",
+      "passed": true
+    },
+    {
+      "plaintext": "0x89F1",
+      "key": "0xEE5B",
+      "cipher_a": "0x52E0",
+      "cipher_b": "0x52E0",
+      "a_decrypt_b": "0x89F1",
+      "b_decrypt_a": "0x89F1",
+      "passed": true
+    },
+    {
+      "plaintext": "0xD062",
+      "key": "0x8CD7",
+      "cipher_a": "0xE504",
+      "cipher_b": "0xE504",
+      "a_decrypt_b": "0xD062",
+      "b_decrypt_a": "0xD062",
+      "passed": true
+    },
+    {
+      "plaintext": "0x699E",
+      "key": "0xE3A9",
+      "cipher_a": "0x6588",
+      "cipher_b": "0x6588",
+      "a_decrypt_b": "0x699E",
+      "b_decrypt_a": "0x699E",
+      "passed": true
+    },
+    {
+      "plaintext": "0x2E66",
+      "key": "0xA369",
+      "cipher_a": "0xBC54",
+      "cipher_b": "0xBC54",
+      "a_decrypt_b": "0x2E66",
+      "b_decrypt_a": "0x2E66",
+      "passed": true
+    },
+    {
+      "plaintext": "0x689C",
+      "key": "0x2FA9",
+      "cipher_a": "0x77E4",
+      "cipher_b": "0x77E4",
+      "a_decrypt_b": "0x689C",
+      "b_decrypt_a": "0x689C",
+      "passed": true
+    },
+    {
+      "plaintext": "0x1941",
+      "key": "0x69F1",
+      "cipher_a": "0x0F69",
+      "cipher_b": "0x0F69",
+      "a_decrypt_b": "0x1941",
+      "b_decrypt_a": "0x1941",
+      "passed": true
+    },
+    {
+      "plaintext": "0xEA6D",
+      "key": "0x6E69",
+      "cipher_a": "0xBF80",
+      "cipher_b": "0xBF80",
+      "a_decrypt_b": "0xEA6D",
+      "b_decrypt_a": "0xEA6D",
+      "passed": true
+    },
+    {
+      "plaintext": "0xEE59",
+      "key": "0xA437",
+      "cipher_a": "0x9DAE",
+      "cipher_b": "0x9DAE",
+      "a_decrypt_b": "0xEE59",
+      "b_decrypt_a": "0xEE59",
+      "passed": true
+    },
+    {
+      "plaintext": "0x5707",
+      "key": "0x9F8B",
+      "cipher_a": "0x8E42",
+      "cipher_b": "0x8E42",
+      "a_decrypt_b": "0x5707",
+      "b_decrypt_a": "0x5707",
+      "passed": true
+    },
+    {
+      "plaintext": "0x46F0",
+      "key": "0x2F83",
+      "cipher_a": "0x9C6C",
+      "cipher_b": "0x9C6C",
+      "a_decrypt_b": "0x46F0",
+      "b_decrypt_a": "0x46F0",
+      "passed": true
+    },
+    {
+      "plaintext": "0x1798",
+      "key": "0xBBD0",
+      "cipher_a": "0xC68E",
+      "cipher_b": "0xC68E",
+      "a_decrypt_b": "0x1798",
+      "b_decrypt_a": "0x1798",
+      "passed": true
+    },
+    {
+      "plaintext": "0x309F",
+      "key": "0x622F",
+      "cipher_a": "0xFFCD",
+      "cipher_b": "0xFFCD",
+      "a_decrypt_b": "0x309F",
+      "b_decrypt_a": "0x309F",
+      "passed": true
+    },
+    {
+      "plaintext": "0x2F04",
+      "key": "0xCB6F",
+      "cipher_a": "0x575C",
+      "cipher_b": "0x575C",
+      "a_decrypt_b": "0x2F04",
+      "b_decrypt_a": "0x2F04",
+      "passed": true
+    },
+    {
+      "plaintext": "0x61C3",
+      "key": "0x035F",
+      "cipher_a": "0x8509",
+      "cipher_b": "0x8509",
+      "a_decrypt_b": "0x61C3",
+      "b_decrypt_a": "0x61C3",
+      "passed": true
+    },
+    {
+      "plaintext": "0xCDE0",
+      "key": "0xCDC8",
+      "cipher_a": "0xA156",
+      "cipher_b": "0xA156",
+      "a_decrypt_b": "0xCDE0",
+      "b_decrypt_a": "0xCDE0",
+      "passed": true
+    },
+    {
+      "plaintext": "0x4258",
+      "key": "0x5065",
+      "cipher_a": "0x06C4",
+      "cipher_b": "0x06C4",
+      "a_decrypt_b": "0x4258",
+      "b_decrypt_a": "0x4258",
+      "passed": true
+    },
+    {
+      "plaintext": "0xCCB5",
+      "key": "0xC968",
+      "cipher_a": "0xBD8B",
+      "cipher_b": "0xBD8B",
+      "a_decrypt_b": "0xCCB5",
+      "b_decrypt_a": "0xCCB5",
+      "passed": true
+    },
+    {
+      "plaintext": "0x6B30",
+      "key": "0x5C89",
+      "cipher_a": "0xBFB6",
+      "cipher_b": "0xBFB6",
+      "a_decrypt_b": "0x6B30",
+      "b_decrypt_a": "0x6B30",
+      "passed": true
+    },
+    {
+      "plaintext": "0x9021",
+      "key": "0xF57F",
+      "cipher_a": "0x0598",
+      "cipher_b": "0x0598",
+      "a_decrypt_b": "0x9021",
+      "b_decrypt_a": "0x9021",
+      "passed": true
+    },
+    {
+      "plaintext": "0xB6A7",
+      "key": "0xE89D",
+      "cipher_a": "0xC446",
+      "cipher_b": "0xC446",
+      "a_decrypt_b": "0xB6A7",
+      "b_decrypt_a": "0xB6A7",
+      "passed": true
+    },
+    {
+      "plaintext": "0xD7EA",
+      "key": "0xEB5E",
+      "cipher_a": "0xCBBC",
+      "cipher_b": "0xCBBC",
+      "a_decrypt_b": "0xD7EA",
+      "b_decrypt_a": "0xD7EA",
+      "passed": true
+    },
+    {
+      "plaintext": "0xE3A9",
+      "key": "0x7A24",
+      "cipher_a": "0x2735",
+      "cipher_b": "0x2735",
+      "a_decrypt_b": "0xE3A9",
+      "b_decrypt_a": "0xE3A9",
+      "passed": true
+    },
+    {
+      "plaintext": "0x6EDE",
+      "key": "0x0819",
+      "cipher_a": "0x997D",
+      "cipher_b": "0x997D",
+      "a_decrypt_b": "0x6EDE",
+      "b_decrypt_a": "0x6EDE",
+      "passed": true
+    },
+    {
+      "plaintext": "0x0926",
+      "key": "0x6485",
+      "cipher_a": "0x75E7",
+      "cipher_b": "0x75E7",
+      "a_decrypt_b": "0x0926",
+      "b_decrypt_a": "0x0926",
+      "passed": true
+    },
+    {
+      "plaintext": "0x20B1",
+      "key": "0x4A43",
+      "cipher_a": "0xDF7B",
+      "cipher_b": "0xDF7B",
+      "a_decrypt_b": "0x20B1",
+      "b_decrypt_a": "0x20B1",
+      "passed": true
+    },
+    {
+      "plaintext": "0xB1C9",
+      "key": "0x586B",
+      "cipher_a": "0x94F6",
+      "cipher_b": "0x94F6",
+      "a_decrypt_b": "0xB1C9",
+      "b_decrypt_a": "0xB1C9",
+      "passed": true
+    },
+    {
+      "plaintext": "0x1968",
+      "key": "0x3B5C",
+      "cipher_a": "0x08B4",
+      "cipher_b": "0x08B4",
+      "a_decrypt_b": "0x1968",
+      "b_decrypt_a": "0x1968",
+      "passed": true
+    },
+    {
+      "plaintext": "0x59EF",
+      "key": "0xED85",
+      "cipher_a": "0x6DC7",
+      "cipher_b": "0x6DC7",
+      "a_decrypt_b": "0x59EF",
+      "b_decrypt_a": "0x59EF",
+      "passed": true
+    },
+    {
+      "plaintext": "0xFCD2",
+      "key": "0x52ED",
+      "cipher_a": "0x5233",
+      "cipher_b": "0x5233",
+      "a_decrypt_b": "0xFCD2",
+      "b_decrypt_a": "0xFCD2",
+      "passed": true
+    },
+    {
+      "plaintext": "0x9363",
+      "key": "0x058C",
+      "cipher_a": "0x20DC",
+      "cipher_b": "0x20DC",
+      "a_decrypt_b": "0x9363",
+      "b_decrypt_a": "0x9363",
+      "passed": true
+    },
+    {
+      "plaintext": "0xBB29",
+      "key": "0x8CC1",
+      "cipher_a": "0xE82B",
+      "cipher_b": "0xE82B",
+      "a_decrypt_b": "0xBB29",
+      "b_decrypt_a": "0xBB29",
+      "passed": true
+    },
+    {
+      "plaintext": "0x82C3",
+      "key": "0xE342",
+      "cipher_a": "0x6358",
+      "cipher_b": "0x6358",
+      "a_decrypt_b": "0x82C3",
+      "b_decrypt_a": "0x82C3",
+      "passed": true
+    },
+    {
+      "plaintext": "0xE6CE",
+      "key": "0x7276",
+      "cipher_a": "0xF7AD",
+      "cipher_b": "0xF7AD",
+      "a_decrypt_b": "0xE6CE",
+      "b_decrypt_a": "0xE6CE",
+      "passed": true
+    },
+    {
+      "plaintext": "0xC20F",
+      "key": "0xF444",
+      "cipher_a": "0x9B82",
+      "cipher_b": "0x9B82",
+      "a_decrypt_b": "0xC20F",
+      "b_decrypt_a": "0xC20F",
+      "passed": true
+    },
+    {
+      "plaintext": "0xAA15",
+      "key": "0x704D",
+      "cipher_a": "0x6134",
+      "cipher_b": "0x6134",
+      "a_decrypt_b": "0xAA15",
+      "b_decrypt_a": "0xAA15",
+      "passed": true
+    },
+    {
+      "plaintext": "0xE0CC",
+      "key": "0x2E99",
+      "cipher_a": "0x379B",
+      "cipher_b": "0x379B",
+      "a_decrypt_b": "0xE0CC",
+      "b_decrypt_a": "0xE0CC",
+      "passed": true
+    },
+    {
+      "plaintext": "0x8893",
+      "key": "0xF3A8",
+      "cipher_a": "0x7A6E",
+      "cipher_b": "0x7A6E",
+      "a_decrypt_b": "0x8893",
+      "b_decrypt_a": "0x8893",
+      "passed": true
+    },
+    {
+      "plaintext": "0xF8D3",
+      "key": "0x387A",
+      "cipher_a": "0xAEE6",
+      "cipher_b": "0xAEE6",
+      "a_decrypt_b": "0xF8D3",
+      "b_decrypt_a": "0xF8D3",
+      "passed": true
+    },
+    {
+      "plaintext": "0x2B04",
+      "key": "0xC1E8",
+      "cipher_a": "0xF5E7",
+      "cipher_b": "0xF5E7",
+      "a_decrypt_b": "0x2B04",
+      "b_decrypt_a": "0x2B04",
+      "passed": true
+    },
+    {
+      "plaintext": "0xC358",
+      "key": "0xC6F3",
+      "cipher_a": "0x63B3",
+      "cipher_b": "0x63B3",
+      "a_decrypt_b": "0xC358",
+      "b_decrypt_a": "0xC358",
+      "passed": true
+    },
+    {
+      "plaintext": "0x0C23",
+      "key": "0x7344",
+      "cipher_a": "0x8530",
+      "cipher_b": "0x8530",
+      "a_decrypt_b": "0x0C23",
+      "b_decrypt_a": "0x0C23",
+      "passed": true
+    },
+    {
+      "plaintext": "0xE5AF",
+      "key": "0x4779",
+      "cipher_a": "0x8C5B",
+      "cipher_b": "0x8C5B",
+      "a_decrypt_b": "0xE5AF",
+      "b_decrypt_a": "0xE5AF",
+      "passed": true
+    },
+    {
+      "plaintext": "0x0164",
+      "key": "0xDE8C",
+      "cipher_a": "0xBC23",
+      "cipher_b": "0xBC23",
+      "a_decrypt_b": "0x0164",
+      "b_decrypt_a": "0x0164",
+      "passed": true
+    },
+    {
+      "plaintext": "0x9B13",
+      "key": "0xFEE8",
+      "cipher_a": "0x1332",
+      "cipher_b": "0x1332",
+      "a_decrypt_b": "0x9B13",
+      "b_decrypt_a": "0x9B13",
+      "passed": true
+    },
+    {
+      "plaintext": "0xFA72",
+      "key": "0xC7D0",
+      "cipher_a": "0xA52B",
+      "cipher_b": "0xA52B",
+      "a_decrypt_b": "0xFA72",
+      "b_decrypt_a": "0xFA72",
+      "passed": true
+    },
+    {
+      "plaintext": "0x1718",
+      "key": "0xD2D9",
+      "cipher_a": "0x3857",
+      "cipher_b": "0x3857",
+      "a_decrypt_b": "0x1718",
+      "b_decrypt_a": "0x1718",
+      "passed": true
+    },
+    {
+      "plaintext": "0xAA8A",
+      "key": "0x1B4D",
+      "cipher_a": "0xCD81",
+      "cipher_b": "0xCD81",
+      "a_decrypt_b": "0xAA8A",
+      "b_decrypt_a": "0xAA8A",
+      "passed": true
+    },
+    {
+      "plaintext": "0x9149",
+      "key": "0xD60A",
+      "cipher_a": "0xDA5A",
+      "cipher_b": "0xDA5A",
+      "a_decrypt_b": "0x9149",
+      "b_decrypt_a": "0x9149",
+      "passed": true
+    },
+    {
+      "plaintext": "0xF2CF",
+      "key": "0x4317",
+      "cipher_a": "0x73AF",
+      "cipher_b": "0x73AF",
+      "a_decrypt_b": "0xF2CF",
+      "b_decrypt_a": "0xF2CF",
+      "passed": true
+    },
+    {
+      "plaintext": "0x20A8",
+      "key": "0x6336",
+      "cipher_a": "0x071F",
+      "cipher_b": "0x071F",
+      "a_decrypt_b": "0x20A8",
+      "b_decrypt_a": "0x20A8",
+      "passed": true
+    },
+    {
+      "plaintext": "0x1E1D",
+      "key": "0x6261",
+      "cipher_a": "0xAFA9",
+      "cipher_b": "0xAFA9",
+      "a_decrypt_b": "0x1E1D",
+      "b_decrypt_a": "0x1E1D",
+      "passed": true
+    },
+    {
+      "plaintext": "0x6F89",
+      "key": "0xA246",
+      "cipher_a": "0x9A27",
+      "cipher_b": "0x9A27",
+      "a_decrypt_b": "0x6F89",
+      "b_decrypt_a": "0x6F89",
+      "passed": true
+    },
+    {
+      "plaintext": "0xB6F5",
+      "key": "0x681A",
+      "cipher_a": "0x2285",
+      "cipher_b": "0x2285",
+      "a_decrypt_b": "0xB6F5",
+      "b_decrypt_a": "0xB6F5",
+      "passed": true
+    },
+    {
+      "plaintext": "0x1A72",
+      "key": "0xB084",
+      "cipher_a": "0x1053",
+      "cipher_b": "0x1053",
+      "a_decrypt_b": "0x1A72",
+      "b_decrypt_a": "0x1A72",
+      "passed": true
+    },
+    {
+      "plaintext": "0xDC62",
+      "key": "0x350D",
+      "cipher_a": "0x3C66",
+      "cipher_b": "0x3C66",
+      "a_decrypt_b": "0xDC62",
+      "b_decrypt_a": "0xDC62",
+      "passed": true
+    },
+    {
+      "plaintext": "0x51EE",
+      "key": "0x9ECE",
+      "cipher_a": "0x896B",
+      "cipher_b": "0x896B",
+      "a_decrypt_b": "0x51EE",
+      "b_decrypt_a": "0x51EE",
+      "passed": true
+    },
+    {
+      "plaintext": "0x30CB",
+      "key": "0x4C8C",
+      "cipher_a": "0x1FAC",
+      "cipher_b": "0x1FAC",
+      "a_decrypt_b": "0x30CB",
+      "b_decrypt_a": "0x30CB",
+      "passed": true
+    },
+    {
+      "plaintext": "0x973D",
+      "key": "0xE235",
+      "cipher_a": "0xA3EE",
+      "cipher_b": "0xA3EE",
+      "a_decrypt_b": "0x973D",
+      "b_decrypt_a": "0x973D",
+      "passed": true
+    },
+    {
+      "plaintext": "0x50C3",
+      "key": "0xADC5",
+      "cipher_a": "0x701A",
+      "cipher_b": "0x701A",
+      "a_decrypt_b": "0x50C3",
+      "b_decrypt_a": "0x50C3",
+      "passed": true
+    },
+    {
+      "plaintext": "0xEEF2",
+      "key": "0xB0D3",
+      "cipher_a": "0x538D",
+      "cipher_b": "0x538D",
+      "a_decrypt_b": "0xEEF2",
+      "b_decrypt_a": "0xEEF2",
+      "passed": true
+    },
+    {
+      "plaintext": "0x12F9",
+      "key": "0x6EBE",
+      "cipher_a": "0x2299",
+      "cipher_b": "0x2299",
+      "a_decrypt_b": "0x12F9",
+      "b_decrypt_a": "0x12F9",
+      "passed": true
+    },
+    {
+      "plaintext": "0xF32F",
+      "key": "0xD7F6",
+      "cipher_a": "0x12A0",
+      "cipher_b": "0x12A0",
+      "a_decrypt_b": "0xF32F",
+      "b_decrypt_a": "0xF32F",
+      "passed": true
+    },
+    {
+      "plaintext": "0x6829",
+      "key": "0x2DF3",
+      "cipher_a": "0xC43F",
+      "cipher_b": "0xC43F",
+      "a_decrypt_b": "0x6829",
+      "b_decrypt_a": "0x6829",
+      "passed": true
+    },
+    {
+      "plaintext": "0xEE68",
+      "key": "0x8C7F",
+      "cipher_a": "0xA7C6",
+      "cipher_b": "0xA7C6",
+      "a_decrypt_b": "0xEE68",
+      "b_decrypt_a": "0xEE68",
+      "passed": true
+    },
+    {
+      "plaintext": "0xC9C9",
+      "key": "0xB02B",
+      "cipher_a": "0x4044",
+      "cipher_b": "0x4044",
+      "a_decrypt_b": "0xC9C9",
+      "b_decrypt_a": "0xC9C9",
+      "passed": true
+    },
+    {
+      "plaintext": "0xEC12",
+      "key": "0x1282",
+      "cipher_a": "0x03AB",
+      "cipher_b": "0x03AB",
+      "a_decrypt_b": "0xEC12",
+      "b_decrypt_a": "0xEC12",
+      "passed": true
+    },
+    {
+      "plaintext": "0xDBFA",
+      "key": "0xAC9B",
+      "cipher_a": "0x60E3",
+      "cipher_b": "0x60E3",
+      "a_decrypt_b": "0xDBFA",
+      "b_decrypt_a": "0xDBFA",
+      "passed": true
+    },
+    {
+      "plaintext": "0x5776",
+      "key": "0xD7A1",
+      "cipher_a": "0x3E40",
+      "cipher_b": "0x3E40",
+      "a_decrypt_b": "0x5776",
+      "b_decrypt_a": "0x5776",
+      "passed": true
+    },
+    {
+      "plaintext": "0xC10B",
+      "key": "0x51AB",
+      "cipher_a": "0x271F",
+      "cipher_b": "0x271F",
+      "a_decrypt_b": "0xC10B",
+      "b_decrypt_a": "0xC10B",
+      "passed": true
+    },
+    {
+      "plaintext": "0x4934",
+      "key": "0x35FB",
+      "cipher_a": "0x3E14",
+      "cipher_b": "0x3E14",
+      "a_decrypt_b": "0x4934",
+      "b_decrypt_a": "0x4934",
+      "passed": true
+    },
+    {
+      "plaintext": "0x201E",
+      "key": "0x203E",
+      "cipher_a": "0x89EF",
+      "cipher_b": "0x89EF",
+      "a_decrypt_b": "0x201E",
+      "b_decrypt_a": "0x201E",
+      "passed": true
+    },
+    {
+      "plaintext": "0x0791",
+      "key": "0x0B49",
+      "cipher_a": "0x861C",
+      "cipher_b": "0x861C",
+      "a_decrypt_b": "0x0791",
+      "b_decrypt_a": "0x0791",
+      "passed": true
+    },
+    {
+      "plaintext": "0x7438",
+      "key": "0x42E0",
+      "cipher_a": "0x9887",
+      "cipher_b": "0x9887",
+      "a_decrypt_b": "0x7438",
+      "b_decrypt_a": "0x7438",
+      "passed": true
+    },
+    {
+      "plaintext": "0x9389",
+      "key": "0xB6A8",
+      "cipher_a": "0x5523",
+      "cipher_b": "0x5523",
+      "a_decrypt_b": "0x9389",
+      "b_decrypt_a": "0x9389",
+      "passed": true
+    },
+    {
+      "plaintext": "0x3F0E",
+      "key": "0x3BEB",
+      "cipher_a": "0xDFC6",
+      "cipher_b": "0xDFC6",
+      "a_decrypt_b": "0x3F0E",
+      "b_decrypt_a": "0x3F0E",
+      "passed": true
+    },
+    {
+      "plaintext": "0x84A5",
+      "key": "0x0EA7",
+      "cipher_a": "0xD845",
+      "cipher_b": "0xD845",
+      "a_decrypt_b": "0x84A5",
+      "b_decrypt_a": "0x84A5",
+      "passed": true
+    },
+    {
+      "plaintext": "0xAEC6",
+      "key": "0x3598",
+      "cipher_a": "0x1CFC",
+      "cipher_b": "0x1CFC",
+      "a_decrypt_b": "0xAEC6",
+      "b_decrypt_a": "0xAEC6",
+      "passed": true
+    },
+    {
+      "plaintext": "0x591F",
+      "key": "0x1F09",
+      "cipher_a": "0x686D",
+      "cipher_b": "0x686D",
+      "a_decrypt_b": "0x591F",
+      "b_decrypt_a": "0x591F",
+      "passed": true
+    },
+    {
+      "plaintext": "0xC6AE",
+      "key": "0x1CBA",
+      "cipher_a": "0x3D17",
+      "cipher_b": "0x3D17",
+      "a_decrypt_b": "0xC6AE",
+      "b_decrypt_a": "0xC6AE",
+      "passed": true
+    },
+    {
+      "plaintext": "0xAD3C",
+      "key": "0x38D6",
+      "cipher_a": "0xDF66",
+      "cipher_b": "0xDF66",
+      "a_decrypt_b": "0xAD3C",
+      "b_decrypt_a": "0xAD3C",
+      "passed": true
+    },
+    {
+      "plaintext": "0x7D88",
+      "key": "0x69D0",
+      "cipher_a": "0x78BA",
+      "cipher_b": "0x78BA",
+      "a_decrypt_b": "0x7D88",
+      "b_decrypt_a": "0x7D88",
+      "passed": true
+    },
+    {
+      "plaintext": "0xAB6B",
+      "key": "0x3E0B",
+      "cipher_a": "0x1225",
+      "cipher_b": "0x1225",
+      "a_decrypt_b": "0xAB6B",
+      "b_decrypt_a": "0xAB6B",
+      "passed": true
+    },
+    {
+      "plaintext": "0xCA83",
+      "key": "0x83F1",
+      "cipher_a": "0x3E55",
+      "cipher_b": "0x3E55",
+      "a_decrypt_b": "0xCA83",
+      "b_decrypt_a": "0xCA83",
+      "passed": true
+    },
+    {
+      "plaintext": "0x257F",
+      "key": "0xCB40",
+      "cipher_a": "0x8FC4",
+      "cipher_b": "0x8FC4",
+      "a_decrypt_b": "0x257F",
+      "b_decrypt_a": "0x257F",
+      "passed": true
+    },
+    {
+      "plaintext": "0xCDD3",
+      "key": "0x0AD4",
+      "cipher_a": "0x07FF",
+      "cipher_b": "0x07FF",
+      "a_decrypt_b": "0xCDD3",
+      "b_decrypt_a": "0xCDD3",
+      "passed": true
+    },
+    {
+      "plaintext": "0xDF56",
+      "key": "0x5806",
+      "cipher_a": "0x78DC",
+      "cipher_b": "0x78DC",
+      "a_decrypt_b": "0xDF56",
+      "b_decrypt_a": "0xDF56",
+      "passed": true
+    },
+    {
+      "plaintext": "0x098D",
+      "key": "0x3DB4",
+      "cipher_a": "0x4ED2",
+      "cipher_b": "0x4ED2",
+      "a_decrypt_b": "0x098D",
+      "b_decrypt_a": "0x098D",
+      "passed": true
+    },
+    {
+      "plaintext": "0xBCEA",
+      "key": "0x5C1F",
+      "cipher_a": "0x8F85",
+      "cipher_b": "0x8F85",
+      "a_decrypt_b": "0xBCEA",
+      "b_decrypt_a": "0xBCEA",
+      "passed": true
+    },
+    {
+      "plaintext": "0x8926",
+      "key": "0x0F71",
+      "cipher_a": "0x2CBF",
+      "cipher_b": "0x2CBF",
+      "a_decrypt_b": "0x8926",
+      "b_decrypt_a": "0x8926",
+      "passed": true
+    }
+  ]
+}

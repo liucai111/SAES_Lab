@@ -1,0 +1,41 @@
+test_cli_encrypt_decrypt (tests.test_saes.IntegrationCLI.test_cli_encrypt_decrypt) ... ok
+test_gui_import_and_service (tests.test_saes.IntegrationCLI.test_gui_import_and_service) ... ok
+test_all_keys_one_plaintext (tests.test_saes.Stage1Basic.test_all_keys_one_plaintext) ... ok
+test_all_plaintexts_one_key (tests.test_saes.Stage1Basic.test_all_plaintexts_one_key) ... ok
+test_component_inverses (tests.test_saes.Stage1Basic.test_component_inverses) ... ok
+test_invalid_words (tests.test_saes.Stage1Basic.test_invalid_words) ... ok
+test_key_schedule (tests.test_saes.Stage1Basic.test_key_schedule) ... ok
+test_known_answers (tests.test_saes.Stage1Basic.test_known_answers) ... ok
+test_parsers (tests.test_saes.Stage1Basic.test_parsers) ... ok
+test_trace (tests.test_saes.Stage1Basic.test_trace) ... ok
+test_all_finite_field_pairs (tests.test_saes.Stage2CrossImplementation.test_all_finite_field_pairs) ... ok
+test_independent_matrix_implementation (tests.test_saes.Stage2CrossImplementation.test_independent_matrix_implementation) ... ok
+test_all_cipher_byte_values_and_padding (tests.test_saes.Stage3ASCII.test_all_cipher_byte_values_and_padding) ... ok
+test_padded_ascii_roundtrip (tests.test_saes.Stage3ASCII.test_padded_ascii_roundtrip) ... ok
+test_raw_two_byte_mode (tests.test_saes.Stage3ASCII.test_raw_two_byte_mode) ... ok
+test_transport_encodings (tests.test_saes.Stage3ASCII.test_transport_encodings) ... ok
+test_double_and_triple (tests.test_saes.Stage4Multiple.test_double_and_triple) ... ok
+test_mitm_full_space (tests.test_saes.Stage4Multiple.test_mitm_full_space) ... ok
+test_mitm_validation_cancel (tests.test_saes.Stage4Multiple.test_mitm_validation_cancel) ... ok
+test_flip_cipher_bit (tests.test_saes.Stage5CBC.test_flip_cipher_bit) ... ok
+test_flip_iv_bit (tests.test_saes.Stage5CBC.test_flip_iv_bit) ... ok
+test_replace_cipher_block (tests.test_saes.Stage5CBC.test_replace_cipher_block) ... ok
+test_roundtrip_and_equation (tests.test_saes.Stage5CBC.test_roundtrip_and_equation) ... ok
+test_text_and_validation (tests.test_saes.Stage5CBC.test_text_and_validation) ... ok
+test_decryption_trace_known_states (tests.test_workflows.AppendixD.test_decryption_trace_known_states) ... ok
+test_textbook_expansion (tests.test_workflows.AppendixD.test_textbook_expansion) ... ok
+test_textbook_sboxes_and_examples (tests.test_workflows.AppendixD.test_textbook_sboxes_and_examples) ... ok
+test_cbc_iv_and_last_block_mutation (tests.test_workflows.WorkflowTests.test_cbc_iv_and_last_block_mutation) ... ok
+test_cbc_no_op_and_validation (tests.test_workflows.WorkflowTests.test_cbc_no_op_and_validation) ... ok
+test_cbc_replacement (tests.test_workflows.WorkflowTests.test_cbc_replacement) ... ok
+test_cbc_xor_from_clean_baseline (tests.test_workflows.WorkflowTests.test_cbc_xor_from_clean_baseline) ... ok
+test_independent_comparison (tests.test_workflows.WorkflowTests.test_independent_comparison) ... ok
+test_join_subkeys_preserves_order (tests.test_workflows.WorkflowTests.test_join_subkeys_preserves_order) ... ok
+test_mode_capabilities (tests.test_workflows.WorkflowTests.test_mode_capabilities) ... ok
+test_multi_trace_matches_final_cipher (tests.test_workflows.WorkflowTests.test_multi_trace_matches_final_cipher) ... ok
+test_peer_match_and_mismatch (tests.test_workflows.WorkflowTests.test_peer_match_and_mismatch) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 7.033s
+
+OK

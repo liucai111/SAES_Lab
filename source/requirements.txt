@@ -1,0 +1,2 @@
+# Runtime and tests use Python 3.10+ standard library only.
+# GUI requires tkinter (included in the official Windows Python installer).

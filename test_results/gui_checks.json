@@ -1,0 +1,142 @@
+{
+  "generated_at_utc": "2026-10-28T01:22:47.440873+00:00",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "method": "Actual Tk windows, mapped controls, button callbacks, clipboard and file-content verification",
+  "checks": [
+    {
+      "id": "G01_stage1_only_required_fields",
+      "status": "passed",
+      "elapsed_seconds": 0.025414
+    },
+    {
+      "id": "G02_direct_result_copy_and_process",
+      "status": "passed",
+      "elapsed_seconds": 0.218848
+    },
+    {
+      "id": "G03_one_click_handoff_and_inverse_trace",
+      "status": "passed",
+      "elapsed_seconds": 0.056664
+    },
+    {
+      "id": "G04_invalidate_stale_result_and_inline_error",
+      "status": "passed",
+      "elapsed_seconds": 0.052463
+    },
+    {
+      "id": "G05_navigation_preserves_per_stage_state",
+      "status": "passed",
+      "elapsed_seconds": 0.109335
+    },
+    {
+      "id": "G06_ascii_conditional_encoding_and_padding",
+      "status": "passed",
+      "elapsed_seconds": 0.088128
+    },
+    {
+      "id": "G07_ascii_raw_two_byte_roundtrip",
+      "status": "passed",
+      "elapsed_seconds": 0.066063
+    },
+    {
+      "id": "G08_ascii_padding_base64_whitespace_and_empty",
+      "status": "passed",
+      "elapsed_seconds": 0.180334
+    },
+    {
+      "id": "G09_ascii_rejects_non_ascii_and_odd_raw_length",
+      "status": "passed",
+      "elapsed_seconds": 0.085026
+    },
+    {
+      "id": "G10_peer_comparison_match_mismatch_and_validation",
+      "status": "passed",
+      "elapsed_seconds": 0.097338
+    },
+    {
+      "id": "G11_live_independent_implementation_comparison",
+      "status": "passed",
+      "elapsed_seconds": 0.061386
+    },
+    {
+      "id": "G12_multiple_separate_keys_and_roundtrips",
+      "status": "passed",
+      "elapsed_seconds": 0.287976
+    },
+    {
+      "id": "G13_subkey_specific_validation",
+      "status": "passed",
+      "elapsed_seconds": 0.053705
+    },
+    {
+      "id": "G14_cbc_required_iv_and_normal_roundtrip",
+      "status": "passed",
+      "elapsed_seconds": 0.149562
+    },
+    {
+      "id": "G15_cbc_xor_tamper_comparison_table",
+      "status": "passed",
+      "elapsed_seconds": 0.123713
+    },
+    {
+      "id": "G16_cbc_replace_iv_and_invalid_index",
+      "status": "passed",
+      "elapsed_seconds": 0.029958
+    },
+    {
+      "id": "G17_cbc_parameter_edit_invalidates_tamper_baseline",
+      "status": "passed",
+      "elapsed_seconds": 0.040747
+    },
+    {
+      "id": "G18_cbc_text_handoff_shared_iv_and_random_generation",
+      "status": "passed",
+      "elapsed_seconds": 0.099027
+    },
+    {
+      "id": "G19_export_real_json_csv_and_tamper_records",
+      "status": "passed",
+      "elapsed_seconds": 0.108421
+    },
+    {
+      "id": "G20_live_full_space_mitm_three_pairs",
+      "status": "passed",
+      "elapsed_seconds": 2.291089
+    },
+    {
+      "id": "G21_single_pair_keeps_all_candidates_in_export",
+      "status": "passed",
+      "elapsed_seconds": 3.769192
+    },
+    {
+      "id": "G22_attack_cancel_and_restart_without_stale_result",
+      "status": "passed",
+      "elapsed_seconds": 9.18923
+    },
+    {
+      "id": "G23_attack_edited_input_and_validation",
+      "status": "passed",
+      "elapsed_seconds": 0.080957
+    },
+    {
+      "id": "G24_small_window_stacking_and_scrollable_details",
+      "status": "passed",
+      "elapsed_seconds": 1.477996
+    }
+  ],
+  "passed": 24,
+  "total": 24,
+  "screenshots": [
+    "stage1_basic.png",
+    "stage1_process.png",
+    "stage3_ascii.png",
+    "stage2_cross.png",
+    "stage4_double.png",
+    "stage4_triple.png",
+    "stage5_cbc.png",
+    "stage5_tamper.png",
+    "stage4_mitm.png"
+  ],
+  "native_windows_manual": "Not executed here; verify on the submission computer",
+  "external_group_test": "Not executed; peer entries in GUI regression are controlled test data"
+}

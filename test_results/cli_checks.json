@@ -1,0 +1,400 @@
+{
+  "generated_at_utc": "2026-10-28T01:27:37.871290+00:00",
+  "passed": 23,
+  "total": 23,
+  "cases": [
+    {
+      "id": "block_encrypt",
+      "args": [
+        "block",
+        "--data",
+        "0xD728",
+        "--key",
+        "0x4AF5"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"hex\": \"0x24EC\",\n  \"binary\": \"0010010011101100\",\n  \"round_keys\": [\n    \"0x4AF5\",\n    \"0xDD28\",\n    \"0x87AF\"\n  ],\n  \"trace\": [\n    {\n      \"step\": \"Input\",\n      \"hex\": \"D728\",\n      \"bits\": \"1101011100101000\"\n    },\n    {\n      \"step\": \"AddRoundKey K0\",\n      \"hex\": \"9DDD\",\n      \"bits\": \"1001110111011101\"\n    },\n    {\n      \"step\": \"SubNib R1\",\n      \"hex\": \"2EEE\",\n      \"bits\": \"0010111011101110\"\n    },\n    {\n      \"step\": \"ShiftRows R1\",\n      \"hex\": \"2EEE\",\n      \"bits\": \"0010111011101110\"\n    },\n    {\n      \"step\": \"MixColumns R1\",\n      \"hex\": \"F633\",\n      \"bits\": \"1111011000110011\"\n    },\n    {\n      \"step\": \"AddRoundKey K1\",\n      \"hex\": \"2B1B\",\n      \"bits\": \"0010101100011011\"\n    },\n    {\n      \"step\": \"SubNib R2\",\n      \"hex\": \"A343\",\n      \"bits\": \"1010001101000011\"\n    },\n    {\n      \"step\": \"ShiftRows R2\",\n      \"hex\": \"A343\",\n      \"bits\": \"1010001101000011\"\n    },\n    {\n      \"step\": \"AddRoundKey K2\",\n      \"hex\": \"24EC\",\n      \"bits\": \"0010010011101100\"\n    }\n  ]\n}\n",
+      "stderr": "",
+      "expected": "0x24EC",
+      "passed": true,
+      "elapsed_seconds": 0.07683498000005784
+    },
+    {
+      "id": "block_decrypt",
+      "args": [
+        "block",
+        "--data",
+        "0x24EC",
+        "--key",
+        "0x4AF5",
+        "--decrypt"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"hex\": \"0xD728\",\n  \"binary\": \"1101011100101000\",\n  \"round_keys\": [\n    \"0x4AF5\",\n    \"0xDD28\",\n    \"0x87AF\"\n  ],\n  \"trace\": [\n    {\n      \"step\": \"Input\",\n      \"hex\": \"24EC\",\n      \"bits\": \"0010010011101100\"\n    },\n    {\n      \"step\": \"AddRoundKey K2\",\n      \"hex\": \"A343\",\n      \"bits\": \"1010001101000011\"\n    },\n    {\n      \"step\": \"InvShiftRows R2\",\n      \"hex\": \"A343\",\n      \"bits\": \"1010001101000011\"\n    },\n    {\n      \"step\": \"InvSubNib R2\",\n      \"hex\": \"2B1B\",\n      \"bits\": \"0010101100011011\"\n    },\n    {\n      \"step\": \"AddRoundKey K1\",\n      \"hex\": \"F633\",\n      \"bits\": \"1111011000110011\"\n    },\n    {\n      \"step\": \"InvMixColumns R1\",\n      \"hex\": \"2EEE\",\n      \"bits\": \"0010111011101110\"\n    },\n    {\n      \"step\": \"InvShiftRows R1\",\n      \"hex\": \"2EEE\",\n      \"bits\": \"0010111011101110\"\n    },\n    {\n      \"step\": \"InvSubNib R1\",\n      \"hex\": \"9DDD\",\n      \"bits\": \"1001110111011101\"\n    },\n    {\n      \"step\": \"AddRoundKey K0\",\n      \"hex\": \"D728\",\n      \"bits\": \"1101011100101000\"\n    }\n  ]\n}\n",
+      "stderr": "",
+      "expected": "0xD728",
+      "passed": true,
+      "elapsed_seconds": 0.14185525000016241
+    },
+    {
+      "id": "all_zero",
+      "args": [
+        "block",
+        "--data",
+        "0x0000",
+        "--key",
+        "0x0000"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"hex\": \"0x071E\",\n  \"binary\": \"0000011100011110\",\n  \"round_keys\": [\n    \"0x0000\",\n    \"0x1919\",\n    \"0x0D14\"\n  ],\n  \"trace\": [\n    {\n      \"step\": \"Input\",\n      \"hex\": \"0000\",\n      \"bits\": \"0000000000000000\"\n    },\n    {\n      \"step\": \"AddRoundKey K0\",\n      \"hex\": \"0000\",\n      \"bits\": \"0000000000000000\"\n    },\n    {\n      \"step\": \"SubNib R1\",\n      \"hex\": \"9999\",\n      \"bits\": \"1001100110011001\"\n    },\n    {\n      \"step\": \"ShiftRows R1\",\n      \"hex\": \"9999\",\n      \"bits\": \"1001100110011001\"\n    },\n    {\n      \"step\": \"MixColumns R1\",\n      \"hex\": \"BBBB\",\n      \"bits\": \"1011101110111011\"\n    },\n    {\n      \"step\": \"AddRoundKey K1\",\n      \"hex\": \"A2A2\",\n      \"bits\": \"1010001010100010\"\n    },\n    {\n      \"step\": \"SubNib R2\",\n      \"hex\": \"0A0A\",\n      \"bits\": \"0000101000001010\"\n    },\n    {\n      \"step\": \"ShiftRows R2\",\n      \"hex\": \"0A0A\",\n      \"bits\": \"0000101000001010\"\n    },\n    {\n      \"step\": \"AddRoundKey K2\",\n      \"hex\": \"071E\",\n      \"bits\": \"0000011100011110\"\n    }\n  ]\n}\n",
+      "stderr": "",
+      "expected": "0x071E",
+      "passed": true,
+      "elapsed_seconds": 0.053321515000106956
+    },
+    {
+      "id": "all_one",
+      "args": [
+        "block",
+        "--data",
+        "0xFFFF",
+        "--key",
+        "0xFFFF"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"hex\": \"0x5343\",\n  \"binary\": \"0101001101000011\",\n  \"round_keys\": [\n    \"0xFFFF\",\n    \"0x08F7\",\n    \"0x6F98\"\n  ],\n  \"trace\": [\n    {\n      \"step\": \"Input\",\n      \"hex\": \"FFFF\",\n      \"bits\": \"1111111111111111\"\n    },\n    {\n      \"step\": \"AddRoundKey K0\",\n      \"hex\": \"0000\",\n      \"bits\": \"0000000000000000\"\n    },\n    {\n      \"step\": \"SubNib R1\",\n      \"hex\": \"9999\",\n      \"bits\": \"1001100110011001\"\n    },\n    {\n      \"step\": \"ShiftRows R1\",\n      \"hex\": \"9999\",\n      \"bits\": \"1001100110011001\"\n    },\n    {\n      \"step\": \"MixColumns R1\",\n      \"hex\": \"BBBB\",\n      \"bits\": \"1011101110111011\"\n    },\n    {\n      \"step\": \"AddRoundKey K1\",\n      \"hex\": \"B34C\",\n      \"bits\": \"1011001101001100\"\n    },\n    {\n      \"step\": \"SubNib R2\",\n      \"hex\": \"3BDC\",\n      \"bits\": \"0011101111011100\"\n    },\n    {\n      \"step\": \"ShiftRows R2\",\n      \"hex\": \"3CDB\",\n      \"bits\": \"0011110011011011\"\n    },\n    {\n      \"step\": \"AddRoundKey K2\",\n      \"hex\": \"5343\",\n      \"bits\": \"0101001101000011\"\n    }\n  ]\n}\n",
+      "stderr": "",
+      "expected": "0x5343",
+      "passed": true,
+      "elapsed_seconds": 0.09536793200004468
+    },
+    {
+      "id": "ascii_raw_encrypt",
+      "args": [
+        "ascii",
+        "--data",
+        "ok",
+        "--key",
+        "0xA73B",
+        "--no-padding"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"hex\": \"0738\",\n  \"base64\": \"Bzg=\",\n  \"latin1_raw\": \"\\u00078\",\n  \"latin1_repr\": \"'\\\\x078'\",\n  \"binary\": \"0000011100111000\",\n  \"byte_length\": 2\n}\n",
+      "stderr": "",
+      "expected": "0738",
+      "passed": true,
+      "elapsed_seconds": 0.06594877599991378
+    },
+    {
+      "id": "ascii_raw_decrypt",
+      "args": [
+        "ascii",
+        "--data",
+        "0738",
+        "--key",
+        "0xA73B",
+        "--no-padding",
+        "--decrypt"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"plaintext\": \"ok\"\n}\n",
+      "stderr": "",
+      "expected": "ok",
+      "passed": true,
+      "elapsed_seconds": 0.08702391199994963
+    },
+    {
+      "id": "ascii_padded_encrypt",
+      "args": [
+        "ascii",
+        "--data",
+        "ABC",
+        "--key",
+        "0x4AF5"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"hex\": \"324F9645\",\n  \"base64\": \"Mk+WRQ==\",\n  \"latin1_raw\": \"2O\\u0096E\",\n  \"latin1_repr\": \"'2O\\\\x96E'\",\n  \"binary\": \"00110010010011111001011001000101\",\n  \"byte_length\": 4\n}\n",
+      "stderr": "",
+      "expected": "324F9645",
+      "passed": true,
+      "elapsed_seconds": 0.06144060599990553
+    },
+    {
+      "id": "ascii_padded_decrypt",
+      "args": [
+        "ascii",
+        "--data",
+        "324F9645",
+        "--key",
+        "0x4AF5",
+        "--decrypt"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"plaintext\": \"ABC\"\n}\n",
+      "stderr": "",
+      "expected": "ABC",
+      "passed": true,
+      "elapsed_seconds": 0.06942570899991551
+    },
+    {
+      "id": "ascii_base64",
+      "args": [
+        "ascii",
+        "--data",
+        "Mk+WRQ==",
+        "--key",
+        "0x4AF5",
+        "--decrypt",
+        "--encoding",
+        "base64"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"plaintext\": \"ABC\"\n}\n",
+      "stderr": "",
+      "expected": "ABC",
+      "passed": true,
+      "elapsed_seconds": 0.05920365099996161
+    },
+    {
+      "id": "double_encrypt",
+      "args": [
+        "double",
+        "--data",
+        "0x1234",
+        "--key",
+        "0x1A2B3C4D"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"hex\": \"0xF04D\",\n  \"binary\": \"1111000001001101\"\n}\n",
+      "stderr": "",
+      "expected": "0xF04D",
+      "passed": true,
+      "elapsed_seconds": 0.05959818400015138
+    },
+    {
+      "id": "double_decrypt",
+      "args": [
+        "double",
+        "--data",
+        "0xF04D",
+        "--key",
+        "0x1A2B3C4D",
+        "--decrypt"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"hex\": \"0x1234\",\n  \"binary\": \"0001001000110100\"\n}\n",
+      "stderr": "",
+      "expected": "0x1234",
+      "passed": true,
+      "elapsed_seconds": 0.06386829999996735
+    },
+    {
+      "id": "triple_encrypt",
+      "args": [
+        "triple",
+        "--data",
+        "0x1234",
+        "--key",
+        "0x1A2B3C4D5E6F"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"hex\": \"0x6C0F\",\n  \"binary\": \"0110110000001111\"\n}\n",
+      "stderr": "",
+      "expected": "0x6C0F",
+      "passed": true,
+      "elapsed_seconds": 0.06133253500001956
+    },
+    {
+      "id": "triple_decrypt",
+      "args": [
+        "triple",
+        "--data",
+        "0x6C0F",
+        "--key",
+        "0x1A2B3C4D5E6F",
+        "--decrypt"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"hex\": \"0x1234\",\n  \"binary\": \"0001001000110100\"\n}\n",
+      "stderr": "",
+      "expected": "0x1234",
+      "passed": true,
+      "elapsed_seconds": 0.06325749300003736
+    },
+    {
+      "id": "cbc_encrypt",
+      "args": [
+        "cbc-blocks",
+        "--data",
+        "0x1234 0x5678 0x9ABC 0xDEF0",
+        "--key",
+        "0x4AF5",
+        "--iv",
+        "0x1234"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"iv\": {\n    \"hex\": \"0x1234\",\n    \"binary\": \"0001001000110100\"\n  },\n  \"blocks\": [\n    {\n      \"hex\": \"0x52B1\",\n      \"binary\": \"0101001010110001\"\n    },\n    {\n      \"hex\": \"0x9936\",\n      \"binary\": \"1001100100110110\"\n    },\n    {\n      \"hex\": \"0xF9DC\",\n      \"binary\": \"1111100111011100\"\n    },\n    {\n      \"hex\": \"0x64ED\",\n      \"binary\": \"0110010011101101\"\n    }\n  ],\n  \"binary\": \"0101001010110001100110010011011011111001110111000110010011101101\",\n  \"hex\": \"0x52B1 0x9936 0xF9DC 0x64ED\"\n}\n",
+      "stderr": "",
+      "expected": "0x52B1 0x9936 0xF9DC 0x64ED",
+      "passed": true,
+      "elapsed_seconds": 0.05997971200008578
+    },
+    {
+      "id": "cbc_decrypt",
+      "args": [
+        "cbc-blocks",
+        "--data",
+        "0x52B1 0x9936 0xF9DC 0x64ED",
+        "--key",
+        "0x4AF5",
+        "--iv",
+        "0x1234",
+        "--decrypt"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"iv\": {\n    \"hex\": \"0x1234\",\n    \"binary\": \"0001001000110100\"\n  },\n  \"blocks\": [\n    {\n      \"hex\": \"0x1234\",\n      \"binary\": \"0001001000110100\"\n    },\n    {\n      \"hex\": \"0x5678\",\n      \"binary\": \"0101011001111000\"\n    },\n    {\n      \"hex\": \"0x9ABC\",\n      \"binary\": \"1001101010111100\"\n    },\n    {\n      \"hex\": \"0xDEF0\",\n      \"binary\": \"1101111011110000\"\n    }\n  ],\n  \"binary\": \"0001001000110100010101100111100010011010101111001101111011110000\",\n  \"hex\": \"0x1234 0x5678 0x9ABC 0xDEF0\"\n}\n",
+      "stderr": "",
+      "expected": "0x1234 0x5678 0x9ABC 0xDEF0",
+      "passed": true,
+      "elapsed_seconds": 0.07358744500015746
+    },
+    {
+      "id": "cbc_bit_flip",
+      "args": [
+        "cbc-blocks",
+        "--data",
+        "0x52B1 0x9937 0xF9DC 0x64ED",
+        "--key",
+        "0x4AF5",
+        "--iv",
+        "0x1234",
+        "--decrypt"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"iv\": {\n    \"hex\": \"0x1234\",\n    \"binary\": \"0001001000110100\"\n  },\n  \"blocks\": [\n    {\n      \"hex\": \"0x1234\",\n      \"binary\": \"0001001000110100\"\n    },\n    {\n      \"hex\": \"0x467A\",\n      \"binary\": \"0100011001111010\"\n    },\n    {\n      \"hex\": \"0x9ABD\",\n      \"binary\": \"1001101010111101\"\n    },\n    {\n      \"hex\": \"0xDEF0\",\n      \"binary\": \"1101111011110000\"\n    }\n  ],\n  \"binary\": \"0001001000110100010001100111101010011010101111011101111011110000\",\n  \"hex\": \"0x1234 0x467A 0x9ABD 0xDEF0\"\n}\n",
+      "stderr": "",
+      "expected": "0x1234 0x467A 0x9ABD 0xDEF0",
+      "passed": true,
+      "elapsed_seconds": 0.06832529300004353
+    },
+    {
+      "id": "cbc_replace",
+      "args": [
+        "cbc-blocks",
+        "--data",
+        "0x52B1 0x0000 0xF9DC 0x64ED",
+        "--key",
+        "0x4AF5",
+        "--iv",
+        "0x1234",
+        "--decrypt"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"iv\": {\n    \"hex\": \"0x1234\",\n    \"binary\": \"0001001000110100\"\n  },\n  \"blocks\": [\n    {\n      \"hex\": \"0x1234\",\n      \"binary\": \"0001001000110100\"\n    },\n    {\n      \"hex\": \"0x3A90\",\n      \"binary\": \"0011101010010000\"\n    },\n    {\n      \"hex\": \"0x038A\",\n      \"binary\": \"0000001110001010\"\n    },\n    {\n      \"hex\": \"0xDEF0\",\n      \"binary\": \"1101111011110000\"\n    }\n  ],\n  \"binary\": \"0001001000110100001110101001000000000011100010101101111011110000\",\n  \"hex\": \"0x1234 0x3A90 0x038A 0xDEF0\"\n}\n",
+      "stderr": "",
+      "expected": "0x1234 0x3A90 0x038A 0xDEF0",
+      "passed": true,
+      "elapsed_seconds": 0.07486587700009295
+    },
+    {
+      "id": "cbc_iv_flip",
+      "args": [
+        "cbc-blocks",
+        "--data",
+        "0x52B1 0x9936 0xF9DC 0x64ED",
+        "--key",
+        "0x4AF5",
+        "--iv",
+        "0x1235",
+        "--decrypt"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"iv\": {\n    \"hex\": \"0x1235\",\n    \"binary\": \"0001001000110101\"\n  },\n  \"blocks\": [\n    {\n      \"hex\": \"0x1235\",\n      \"binary\": \"0001001000110101\"\n    },\n    {\n      \"hex\": \"0x5678\",\n      \"binary\": \"0101011001111000\"\n    },\n    {\n      \"hex\": \"0x9ABC\",\n      \"binary\": \"1001101010111100\"\n    },\n    {\n      \"hex\": \"0xDEF0\",\n      \"binary\": \"1101111011110000\"\n    }\n  ],\n  \"binary\": \"0001001000110101010101100111100010011010101111001101111011110000\",\n  \"hex\": \"0x1235 0x5678 0x9ABC 0xDEF0\"\n}\n",
+      "stderr": "",
+      "expected": "0x1235 0x5678 0x9ABC 0xDEF0",
+      "passed": true,
+      "elapsed_seconds": 0.07521046199985904
+    },
+    {
+      "id": "full_mitm",
+      "args": [
+        "mitm",
+        "--pairs-file",
+        "pairs.txt"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"candidates\": [\n    {\n      \"key1\": \"0x1A2B\",\n      \"key2\": \"0x3C4D\",\n      \"combined_binary\": \"00011010001010110011110001001101\"\n    }\n  ],\n  \"candidate_count\": 1,\n  \"first_pair_matches\": 65419,\n  \"pair_count\": 3,\n  \"forward_keys\": 65536,\n  \"backward_keys\": 65536,\n  \"middle_values\": 41414,\n  \"elapsed_seconds\": 3.76694633399984\n}\n",
+      "stderr": "",
+      "expected": 1,
+      "passed": true,
+      "elapsed_seconds": 3.915869260999898
+    },
+    {
+      "id": "reject_short_block",
+      "args": [
+        "block",
+        "--data",
+        "1010",
+        "--key",
+        "0x4AF5"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "输入错误: 请输入恰好 16 位二进制，或 0x 开头的 4 位十六进制\n",
+      "expected": null,
+      "passed": true,
+      "elapsed_seconds": 0.07104878000018289
+    },
+    {
+      "id": "reject_odd_raw_ascii",
+      "args": [
+        "ascii",
+        "--data",
+        "A",
+        "--key",
+        "0x4AF5",
+        "--no-padding"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "输入错误: 数据长度必须为 2 字节的整数倍；需要时先填充\n",
+      "expected": null,
+      "passed": true,
+      "elapsed_seconds": 0.08791364100011378
+    },
+    {
+      "id": "reject_short_iv",
+      "args": [
+        "cbc-blocks",
+        "--data",
+        "0x1234",
+        "--key",
+        "0x4AF5",
+        "--iv",
+        "0x123"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "输入错误: 请输入恰好 16 位二进制，或 0x 开头的 4 位十六进制\n",
+      "expected": null,
+      "passed": true,
+      "elapsed_seconds": 0.06782019699994635
+    },
+    {
+      "id": "reject_long_key",
+      "args": [
+        "block",
+        "--data",
+        "0x1234",
+        "--key",
+        "0x10000"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "输入错误: 请输入恰好 16 位二进制，或 0x 开头的 4 位十六进制\n",
+      "expected": null,
+      "passed": true,
+      "elapsed_seconds": 0.050328153999998904
+    }
+  ]
+}

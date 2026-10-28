@@ -1,0 +1,322 @@
+{
+  "generated_at_utc": "2026-10-28T01:22:49.154115+00:00",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "stage1": {
+    "vectors": [
+      {
+        "plaintext": "0xD728",
+        "key": "0x4AF5",
+        "ciphertext": "0x24EC",
+        "decrypted": "0xD728",
+        "reference_ciphertext": "0x24EC",
+        "reference_decrypted": "0xD728"
+      },
+      {
+        "plaintext": "0x6F6B",
+        "key": "0xA73B",
+        "ciphertext": "0x0738",
+        "decrypted": "0x6F6B",
+        "reference_ciphertext": "0x0738",
+        "reference_decrypted": "0x6F6B"
+      },
+      {
+        "plaintext": "0x0000",
+        "key": "0x0000",
+        "ciphertext": "0x071E",
+        "decrypted": "0x0000",
+        "reference_ciphertext": "0x071E",
+        "reference_decrypted": "0x0000"
+      },
+      {
+        "plaintext": "0xFFFF",
+        "key": "0xFFFF",
+        "ciphertext": "0x5343",
+        "decrypted": "0xFFFF",
+        "reference_ciphertext": "0x5343",
+        "reference_decrypted": "0xFFFF"
+      },
+      {
+        "plaintext": "0x1234",
+        "key": "0x1A2B",
+        "ciphertext": "0x697C",
+        "decrypted": "0x1234",
+        "reference_ciphertext": "0x697C",
+        "reference_decrypted": "0x1234"
+      }
+    ],
+    "round_keys": [
+      "0x4AF5",
+      "0xDD28",
+      "0x87AF"
+    ],
+    "trace": [
+      {
+        "step": "Input",
+        "hex": "D728",
+        "bits": "1101011100101000"
+      },
+      {
+        "step": "AddRoundKey K0",
+        "hex": "9DDD",
+        "bits": "1001110111011101"
+      },
+      {
+        "step": "SubNib R1",
+        "hex": "2EEE",
+        "bits": "0010111011101110"
+      },
+      {
+        "step": "ShiftRows R1",
+        "hex": "2EEE",
+        "bits": "0010111011101110"
+      },
+      {
+        "step": "MixColumns R1",
+        "hex": "F633",
+        "bits": "1111011000110011"
+      },
+      {
+        "step": "AddRoundKey K1",
+        "hex": "2B1B",
+        "bits": "0010101100011011"
+      },
+      {
+        "step": "SubNib R2",
+        "hex": "A343",
+        "bits": "1010001101000011"
+      },
+      {
+        "step": "ShiftRows R2",
+        "hex": "A343",
+        "bits": "1010001101000011"
+      },
+      {
+        "step": "AddRoundKey K2",
+        "hex": "24EC",
+        "bits": "0010010011101100"
+      }
+    ]
+  },
+  "stage2": {
+    "type": "independent implementation comparison on same host",
+    "random_seed": 20261020,
+    "random_pairs_checked": 1024,
+    "external_group_cross_test": "pending; no group B data supplied"
+  },
+  "stage3": {
+    "examples": [
+      {
+        "plaintext": "",
+        "ciphertext_hex": "D35D",
+        "ciphertext_base64": "010=",
+        "ciphertext_latin1_repr": "'\u00d3]'",
+        "byte_length": 2,
+        "decrypted": ""
+      },
+      {
+        "plaintext": "A",
+        "ciphertext_hex": "9A85",
+        "ciphertext_base64": "moU=",
+        "ciphertext_latin1_repr": "'\\x9a\\x85'",
+        "byte_length": 2,
+        "decrypted": "A"
+      },
+      {
+        "plaintext": "AB",
+        "ciphertext_hex": "324FD35D",
+        "ciphertext_base64": "Mk/TXQ==",
+        "ciphertext_latin1_repr": "'2O\u00d3]'",
+        "byte_length": 4,
+        "decrypted": "AB"
+      },
+      {
+        "plaintext": "ABC",
+        "ciphertext_hex": "324F9645",
+        "ciphertext_base64": "Mk+WRQ==",
+        "ciphertext_latin1_repr": "'2O\\x96E'",
+        "byte_length": 4,
+        "decrypted": "ABC"
+      },
+      {
+        "plaintext": "Hello S-AES!",
+        "ciphertext_hex": "0757F12B3AC522790247E274D35D",
+        "ciphertext_base64": "B1fxKzrFInkCR+J0010=",
+        "ciphertext_latin1_repr": "'\\x07W\u00f1+:\u00c5\"y\\x02G\u00e2t\u00d3]'",
+        "byte_length": 14,
+        "decrypted": "Hello S-AES!"
+      },
+      {
+        "plaintext": "  A\n",
+        "ciphertext_hex": "C66FBA89D35D",
+        "ciphertext_base64": "xm+6idNd",
+        "ciphertext_latin1_repr": "'\u00c6o\u00ba\\x89\u00d3]'",
+        "byte_length": 6,
+        "decrypted": "  A\n"
+      }
+    ],
+    "raw_ok_cipher": "0738"
+  },
+  "stage4": {
+    "plaintext": "0x1234",
+    "keys": [
+      "0x1A2B",
+      "0x3C4D",
+      "0x5E6F"
+    ],
+    "double_cipher": "0xF04D",
+    "double_decrypted": "0x1234",
+    "triple_cipher": "0x6C0F",
+    "triple_decrypted": "0x1234",
+    "known_pairs": [
+      {
+        "plaintext": "0x1234",
+        "ciphertext": "0xF04D"
+      },
+      {
+        "plaintext": "0x5678",
+        "ciphertext": "0x031E"
+      },
+      {
+        "plaintext": "0x9ABC",
+        "ciphertext": "0xAAD1"
+      }
+    ],
+    "mitm_single": {
+      "candidate_count": 65419,
+      "first_pair_matches": 65419,
+      "pair_count": 1,
+      "forward_keys": 65536,
+      "backward_keys": 65536,
+      "middle_values": 41414,
+      "elapsed_seconds": 1.6896997329999977,
+      "contains_original_key": true,
+      "candidate_preview": [
+        {
+          "key1": "0x5F19",
+          "key2": "0x0001"
+        },
+        {
+          "key1": "0xA698",
+          "key2": "0x0001"
+        },
+        {
+          "key1": "0x6196",
+          "key2": "0x0003"
+        },
+        {
+          "key1": "0x94EE",
+          "key2": "0x0003"
+        },
+        {
+          "key1": "0x4A68",
+          "key2": "0x0004"
+        },
+        {
+          "key1": "0xC850",
+          "key2": "0x0004"
+        },
+        {
+          "key1": "0x4ACB",
+          "key2": "0x0005"
+        },
+        {
+          "key1": "0x61ED",
+          "key2": "0x0005"
+        },
+        {
+          "key1": "0x517E",
+          "key2": "0x0006"
+        },
+        {
+          "key1": "0x9C65",
+          "key2": "0x0006"
+        }
+      ]
+    },
+    "mitm_multiple": {
+      "candidate_count": 1,
+      "first_pair_matches": 65419,
+      "pair_count": 3,
+      "forward_keys": 65536,
+      "backward_keys": 65536,
+      "middle_values": 41414,
+      "elapsed_seconds": 2.7736527669999305,
+      "contains_original_key": true,
+      "candidate_preview": [
+        {
+          "key1": "0x1A2B",
+          "key2": "0x3C4D"
+        }
+      ]
+    }
+  },
+  "stage5": {
+    "key": "0x4AF5",
+    "iv": "0x1234",
+    "plaintext": [
+      "0x1234",
+      "0x5678",
+      "0x9ABC",
+      "0xDEF0"
+    ],
+    "ciphertext": [
+      "0x52B1",
+      "0x9936",
+      "0xF9DC",
+      "0x64ED"
+    ],
+    "decrypted": [
+      "0x1234",
+      "0x5678",
+      "0x9ABC",
+      "0xDEF0"
+    ],
+    "flip_second_cipher_lsb": {
+      "ciphertext": [
+        "0x52B1",
+        "0x9937",
+        "0xF9DC",
+        "0x64ED"
+      ],
+      "decrypted": [
+        "0x1234",
+        "0x467A",
+        "0x9ABD",
+        "0xDEF0"
+      ],
+      "plaintext_xor_delta": [
+        "0x0000",
+        "0x1002",
+        "0x0001",
+        "0x0000"
+      ]
+    },
+    "replace_second_cipher_zero": {
+      "ciphertext": [
+        "0x52B1",
+        "0x0000",
+        "0xF9DC",
+        "0x64ED"
+      ],
+      "decrypted": [
+        "0x1234",
+        "0x3A90",
+        "0x038A",
+        "0xDEF0"
+      ],
+      "plaintext_xor_delta": [
+        "0x0000",
+        "0x6CE8",
+        "0x9936",
+        "0x0000"
+      ]
+    },
+    "flip_iv_lsb_decrypted": [
+      "0x1235",
+      "0x5678",
+      "0x9ABC",
+      "0xDEF0"
+    ]
+  }
+}

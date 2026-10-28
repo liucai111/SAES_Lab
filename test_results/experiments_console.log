@@ -1,0 +1,164 @@
+{
+  "stage4": {
+    "plaintext": "0x1234",
+    "keys": [
+      "0x1A2B",
+      "0x3C4D",
+      "0x5E6F"
+    ],
+    "double_cipher": "0xF04D",
+    "double_decrypted": "0x1234",
+    "triple_cipher": "0x6C0F",
+    "triple_decrypted": "0x1234",
+    "known_pairs": [
+      {
+        "plaintext": "0x1234",
+        "ciphertext": "0xF04D"
+      },
+      {
+        "plaintext": "0x5678",
+        "ciphertext": "0x031E"
+      },
+      {
+        "plaintext": "0x9ABC",
+        "ciphertext": "0xAAD1"
+      }
+    ],
+    "mitm_single": {
+      "candidate_count": 65419,
+      "first_pair_matches": 65419,
+      "pair_count": 1,
+      "forward_keys": 65536,
+      "backward_keys": 65536,
+      "middle_values": 41414,
+      "elapsed_seconds": 1.6896997329999977,
+      "contains_original_key": true,
+      "candidate_preview": [
+        {
+          "key1": "0x5F19",
+          "key2": "0x0001"
+        },
+        {
+          "key1": "0xA698",
+          "key2": "0x0001"
+        },
+        {
+          "key1": "0x6196",
+          "key2": "0x0003"
+        },
+        {
+          "key1": "0x94EE",
+          "key2": "0x0003"
+        },
+        {
+          "key1": "0x4A68",
+          "key2": "0x0004"
+        },
+        {
+          "key1": "0xC850",
+          "key2": "0x0004"
+        },
+        {
+          "key1": "0x4ACB",
+          "key2": "0x0005"
+        },
+        {
+          "key1": "0x61ED",
+          "key2": "0x0005"
+        },
+        {
+          "key1": "0x517E",
+          "key2": "0x0006"
+        },
+        {
+          "key1": "0x9C65",
+          "key2": "0x0006"
+        }
+      ]
+    },
+    "mitm_multiple": {
+      "candidate_count": 1,
+      "first_pair_matches": 65419,
+      "pair_count": 3,
+      "forward_keys": 65536,
+      "backward_keys": 65536,
+      "middle_values": 41414,
+      "elapsed_seconds": 2.7736527669999305,
+      "contains_original_key": true,
+      "candidate_preview": [
+        {
+          "key1": "0x1A2B",
+          "key2": "0x3C4D"
+        }
+      ]
+    }
+  },
+  "stage5": {
+    "key": "0x4AF5",
+    "iv": "0x1234",
+    "plaintext": [
+      "0x1234",
+      "0x5678",
+      "0x9ABC",
+      "0xDEF0"
+    ],
+    "ciphertext": [
+      "0x52B1",
+      "0x9936",
+      "0xF9DC",
+      "0x64ED"
+    ],
+    "decrypted": [
+      "0x1234",
+      "0x5678",
+      "0x9ABC",
+      "0xDEF0"
+    ],
+    "flip_second_cipher_lsb": {
+      "ciphertext": [
+        "0x52B1",
+        "0x9937",
+        "0xF9DC",
+        "0x64ED"
+      ],
+      "decrypted": [
+        "0x1234",
+        "0x467A",
+        "0x9ABD",
+        "0xDEF0"
+      ],
+      "plaintext_xor_delta": [
+        "0x0000",
+        "0x1002",
+        "0x0001",
+        "0x0000"
+      ]
+    },
+    "replace_second_cipher_zero": {
+      "ciphertext": [
+        "0x52B1",
+        "0x0000",
+        "0xF9DC",
+        "0x64ED"
+      ],
+      "decrypted": [
+        "0x1234",
+        "0x3A90",
+        "0x038A",
+        "0xDEF0"
+      ],
+      "plaintext_xor_delta": [
+        "0x0000",
+        "0x6CE8",
+        "0x9936",
+        "0x0000"
+      ]
+    },
+    "flip_iv_lsb_decrypted": [
+      "0x1235",
+      "0x5678",
+      "0x9ABC",
+      "0xDEF0"
+    ]
+  }
+}
